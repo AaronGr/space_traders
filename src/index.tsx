@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { LoginContextProvider } from './store/LoginContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  <LoginContextProvider>
     <App />
-  </React.StrictMode>
+  </LoginContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
